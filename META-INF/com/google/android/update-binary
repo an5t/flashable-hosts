@@ -1,0 +1,6 @@
+#!/sbin/sh
+
+zip="$3"
+mount /system
+cp /system/etc/hosts /sdcard/hosts.bak
+unzip -o $zip hosts -d /system/etc/
